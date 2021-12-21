@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>Fast, Diverse and Accurate Image Captioning Guided By Part-of-Speech</title>
+      <link href="/2021/12/21/Fast-Diverse-and-Accurate-Image-Captioning-Guided-By-Part-of-Speech/"/>
+      <url>/2021/12/21/Fast-Diverse-and-Accurate-Image-Captioning-Guided-By-Part-of-Speech/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Fast-Diverse-and-Accurate-Image-Captioning-Guided-By-Part-of-Speech"><a href="#Fast-Diverse-and-Accurate-Image-Captioning-Guided-By-Part-of-Speech" class="headerlink" title="Fast, Diverse and Accurate Image Captioning Guided By Part-of-Speech"></a>Fast, Diverse and Accurate Image Captioning Guided By Part-of-Speech</h2><hr><h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>已有的生成多样性的caption的方法存在以下不足：</p><ul><li>时间复杂度很高，生成的caption比较general，缺乏多样性，比如：Beam Search，Diverse Beam Search</li><li>生成的caption不够accuracy，比如VAE-based method和GAN-based method</li></ul><p>因此，本文提出使用part-of-speech (POS)作为summary，已此summary为条件生成caption以解决上述问题</p><hr><h3 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h3><p>生成summary的方式分为如下3种：</p><ul><li>用户给定，可扩展性不高</li><li>从summary的分布中随机抽取，作为输入的图片的summary，这种方式的准确性不够</li><li>根据图片生成summary，准确性最高</li></ul><p>先将所有训练集中的summary基于hamming distance聚类成1024个簇。训练一个summary分类器，用于预测输入图片的summary。根据两个任务的组合方式，训练方式分为两种：</p><ul><li>分别训练</li><li>联合训练</li></ul><hr><h3 id="Evaluation"><a href="#Evaluation" class="headerlink" title="Evaluation"></a>Evaluation</h3><ul><li><p>Accuracy</p><ul><li>oracle re-ranking</li><li>consensue re-ranking</li></ul></li><li><p>Diversity</p></li></ul><hr><h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>这篇论文可以实现生成快速、多样性、准确的caption</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Paper </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IC </tag>
+            
+            <tag> CIC </tag>
+            
+            <tag> 2019 </tag>
+            
+            <tag> CVPR </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello Blog</title>
       <link href="/2021/12/20/hello-blog/"/>
       <url>/2021/12/20/hello-blog/</url>
