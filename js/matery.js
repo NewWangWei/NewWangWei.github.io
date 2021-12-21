@@ -96,7 +96,7 @@ $(function () {
                 let captionEle = document.createElement('b');
                 captionEle.className = 'center-caption';
                 captionEle.innerText = captionText;
-                // captionDiv.appendChild(captionEle);
+                captionDiv.appendChild(captionEle);
                 this.insertAdjacentElement('afterend', captionDiv)
             }
         });
